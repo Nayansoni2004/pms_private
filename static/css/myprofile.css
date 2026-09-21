@@ -1,0 +1,52 @@
+/* profile card section css start */
+        /* Profile Card Section */
+        .profile-card {
+            max-width: 100%;
+            width: 1165px;
+            margin: 100px auto 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Picture Section */
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid #007bff;
+        }
+
+        /* Info Row Styling */
+        .info-row {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Edit Button Styling */
+        .edit-btn {
+            margin-top: 20px;
+        }
+
+        /* Responsive Design for Small Screens */
+        @media (max-width: 768px) {
+            .profile-card {
+                max-width: 95%;
+            }
+        }
+        /* profile card section css end */

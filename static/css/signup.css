@@ -1,0 +1,81 @@
+/* Form and Input Styles */
+.form-control {
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn-dark {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+/* Logo Styles */
+.logo-brand img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.container {
+    padding: 40px;
+}
+
+/* Password Wrapper Styles */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+.password-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Form and Button Hover Effects */
+.form-control:hover,
+.form-control:focus {
+    border-color: #555;
+    box-shadow: 0 0 8px rgba(85, 85, 85, 0.25);
+}
+
+.btn-dark:hover {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Link Styling */
+.signup-link a {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.signup-link a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    .logo-brand img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+a.logo-brand {
+    text-decoration: none;
+}

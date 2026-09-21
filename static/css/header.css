@@ -1,0 +1,51 @@
+/* navbar css start */
+.form-control {
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+.my-search-btn {
+  /* border-radius: 25%; */
+  /* width: 40px; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-dark {
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+.navbar-nav {
+  margin-left: 45px;
+}
+.nav-link {
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #007bff;
+  transform: translateX(5px);
+}
+/* navbar css end */
+
+/* header logo start */
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* header logo end */

@@ -1,0 +1,20 @@
+# IDE / OS files
+.idea/
+.vscode/
+*.log
+*.tmp
+
+# Temporary & cache folders
+z_cache/
+out/
+scratch/
+temp.txt
+temp2.txt
+abc
+
+# Database dumps and local migration scripts
+backup.sql
+dont_touch_pms_sql.sql
+pms_sql.sql
+upload_to_tidb.bat
+upload_to_tidb.ps1

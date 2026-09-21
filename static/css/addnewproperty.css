@@ -1,0 +1,248 @@
+/* step 1 and step 2 css start */
+/* Hides inactive steps */
+.step {
+  display: none;
+}
+
+/* Displays the active step */
+.step.active {
+  display: block;
+}
+
+/* Navbar image styling */
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Profile picture styling */
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Cursor styling for dropdown */
+.user-dropdown {
+  cursor: pointer;
+}
+
+/* Container for form alignment */
+.form-container {
+  margin-left: 50px;
+  overflow: auto;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+}
+
+.form-container::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Opera */
+}
+
+.container {
+  display: flex;
+}
+
+/* Navbar design */
+/* .navbar {
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        } */
+
+/* Centering dropdown menu */
+/* .dropdown-menu {
+            transform: translateX(-50%) !important;
+            left: 50% !important;
+        } */
+
+/* Prevents horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Button alignment */
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Spacing for button group */
+.btn-group .btn {
+  margin-right: 10px;
+}
+
+/* step 1 and step 2 css end */
+
+.hidden {
+  display: none;
+}
+
+/* additional areas input field */
+
+/* -----------video/image preview size css---------- */
+
+/* #previewContainer .position-relative {
+  position: relative;
+} */
+
+
+.preview-wrapper {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-type-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+
+.view-type-select {
+  /* position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%); */
+  width: 130px;
+  font-size: 13px;
+  z-index: 10;
+}
+
+.media-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+video,
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* step 6 css */
+.section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.input-distance,
+.input-description {
+  margin-left: 10px;
+  width: 150px;
+}
+
+/* effects on back & next buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Progress Bar Section Styling Start */
+.step-progress {
+  margin-bottom: 140px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.09);
+}
+
+/* Individual Step Design */
+.progress-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-step .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ccc;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Active and Completed Step Styling */
+.progress-step.active .circle {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.progress-step.completed .circle {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+/* Vertical Line between Steps */
+.progress-step .line {
+  height: 40px;
+  width: 2px;
+  background-color: #ccc;
+  margin: 0 14px;
+}
+
+/* Step Description Styling */
+.step-text {
+  flex: 1;
+}
+
+.step-text h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.step-text p {
+  margin: 0;
+  color: #6c757d;
+}
+
+/* Progress Bar Section Styling End */

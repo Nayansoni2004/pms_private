@@ -1,0 +1,16 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+backup.sql
+dont_touch_pms_sql.sql
+pms_sql.sql
+upload_to_tidb.bat
+upload_to_tidb.ps1
+abc
+temp.txt
+temp2.txt
+z_cache
+out
+scratch

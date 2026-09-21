@@ -1,0 +1,194 @@
+ /* sidebar.css */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #f9f9f9;
+    color: grey;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.list-unstyled {
+    padding: 0;
+    list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-unstyled li {
+    padding: 10px 15px;
+}
+
+.list-unstyled li a {
+    /* color: white; */
+    color: grey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.list-unstyled li a i {
+    margin-right: 10px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.menu-text {
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.collapsed .menu-text {
+    display: none;
+}
+
+#content {
+    /* margin-left: 250px; */
+    transition: all 0.3s;
+}
+
+#content.expanded {
+    margin-left: 60px;
+}
+
+body, html {
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* .sidebar {
+    right: 0; 
+    left: auto;
+} */
+
+#content {
+    margin-right: 250px; /* Push content to the left */
+    transition: all 0.3s ease;
+}
+
+.sidebar.collapsed + #content {
+    margin-right: 60px;
+}
+
+.sidebar.collapsed + .navbar {
+    width: calc(100% - 60px);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+        position: fixed;
+        height: 100vh;
+        z-index: 1000;
+        transition: all 0.3s;
+    }
+
+    .sidebar.show {
+        width: 250px;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+}
+/* spacing between sidebar icons in vertical */
+.collapsed .list-unstyled li {
+    padding: 22px 0; /* Vertical spacing between icons */
+    display: flex;
+    justify-content: center; 
+}
+
+@media (max-width: 768px) {
+    .collapsed .list-unstyled li {
+        padding: 10px 0; /* Thoda adjust karne ke liye chhoti screens pe */
+    }
+}
+
+/* profile section in sidebar home page */
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 0px 10px;
+    transition: opacity 0.3s ease;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid grey;
+}
+
+.profile-name {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: grey;
+    font-weight: bold;
+}
+
+/* Hide profile pic and name when sidebar is collapsed */
+.sidebar.collapsed .profile-section {
+    /* display: none; */
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+    .profile-name {
+        font-size: 14px;
+    }
+}
+
+.logout-section {
+    margin-top: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Logout, Privacy, Terms aur Help ke beech gap */
+}
+
+@media (max-width: 768px) {
+    .logout-section {
+      gap: 10px;
+    }
+  }
+
+  .collapsed .logout-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
